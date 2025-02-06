@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://theusbuzz.netlify.app/mymap.xml
+Sitemap: https://theusbuzz.netlify.app/map.xml
