@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
   <loc>https://theusbuzz.netlify.app/</loc>
   <lastmod>2025-02-06T16:50:45+00:00</lastmod>
-  <priority>1.00</priority>
+  <priority>1.0</priority>
 </url>
 <url>
   <loc>https://theusbuzz.netlify.app/blogs/news/rfk</loc>
-  <lastmod>2025-02-06T16:50:45+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-06T17:20:45+00:00</lastmod>
+  <priority>0.8</priority>
 </url>
 <url>
   <loc>https://theusbuzz.netlify.app/blogs/sports/speed</loc>
-  <lastmod>2025-02-06T16:50:45+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-06T17:50:45+00:00</lastmod>
+  <priority>0.8</priority>
 </url>
 <url>
   <loc>https://theusbuzz.netlify.app/blogs/news/storm</loc>
-  <lastmod>2025-02-06T16:50:45+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-06T18:20:45+00:00</lastmod>
+  <priority>0.8</priority>
 </url>
 <url>
   <loc>https://theusbuzz.netlify.app/blogs/news/gazast</loc>
-  <lastmod>2025-02-06T16:50:45+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-06T18:50:45+00:00</lastmod>
+  <priority>0.8</priority>
 </url>
 <url>
   <loc>https://theusbuzz.netlify.app/category</loc>
-  <lastmod>2025-02-06T16:50:45+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-06T19:20:45+00:00</lastmod>
+  <priority>0.8</priority>
 </url>
 <url>
   <loc>https://theusbuzz.netlify.app/contact</loc>
-  <lastmod>2025-02-06T16:50:45+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2025-02-06T19:50:45+00:00</lastmod>
+  <priority>0.8</priority>
 </url>
 <url>
   <loc>https://theusbuzz.netlify.app/single</loc>
-  <lastmod>2025-02-06T16:50:45+00:00</lastmod>
-  <priority>0.64</priority>
+  <lastmod>2025-02-06T20:20:45+00:00</lastmod>
+  <priority>0.6</priority>
 </url>
 
 
