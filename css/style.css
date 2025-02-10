@@ -5,6 +5,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -359,8 +360,8 @@ template {
   display: none !important;
 }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+ h2, h3, h4, h5, h6,
+ .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
@@ -369,12 +370,19 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 2.5rem;
+  color: black;
+  transition: text-shadow 0.8s ease-in-out;
+  transition-delay: 0.8s;
 }
 
 @media (max-width: 1200px) {
   h1, .h1 {
-    font-size: calc(1.375rem + 1.5vw) ;
+    font-size: calc(1.375rem + 1.5vw);
   }
+}
+
+h1:hover, .h1:hover {
+  text-shadow: 0 0 10px rgba(253, 0, 8, 0.7);
 }
 
 h2, .h2 {
@@ -9452,11 +9460,6 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 /********** Template CSS ************/
-h1,
-.font-weight-bolder {
-  font-weight: 900 !important;
-}
-
 h2,
 h3,
 .font-weight-bold {
@@ -9652,18 +9655,81 @@ h6,
 }
 
 .question {
-  font-weight: bold;
-  color: white;
-  margin-bottom: 10px;
-  background-color: black;
-  padding: 5px;
-  border-radius: 5px;
+  margin: 10px;
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  background-color: black; /* Background color for question */
 }
+
 .answer {
-  color:wheat;
-  margin-bottom: 20px;
+  margin: 10px;
+  padding: 15px 40px;
+  border: none;
+  outline: none;
+  color: #FFF;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px;
+  background-color: #555; /* Background color for answer */
+}
+
+.question::after, .answer::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: inherit; /* Inherit background from parent */
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* Glow effect for both question and answer */
+.question::before, .answer::before {
+  content: "";
+  background: linear-gradient(45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00C8, #FF0000);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.question:hover::before, .answer:hover::before {
+  opacity: 1;
+}
+
+.question:active::after, .answer:active::after {
+  background: transparent;
+}
+
+.question:active, .answer:active {
+  color: #000;
   font-weight: bold;
-  background-color: black;
-  padding: 5px;
-  border-radius: 5px;
 }
