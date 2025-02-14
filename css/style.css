@@ -9763,14 +9763,14 @@ p{
   position: absolute;
   height: 101%;
   width: 101%;
-  background-image: conic-gradient(from var(--angle), transparent 90%, blue);
+  background-image: conic-gradient(from var(--angle), transparent 90%, red);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
   padding: 10px;
   border-radius: 2px;
-  animation: 7s spin linear infinite;
+  animation: 8s spin linear infinite;
 }
 .card1::before{
   filter: blur(1.25rem);
